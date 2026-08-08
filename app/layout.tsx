@@ -7,7 +7,7 @@ import "@fontsource/libre-baskerville/700.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://life-extension.example"),
+  metadataBase: new URL("https://lifeextension.vercel.app"),
   title: {
     default: "Life Extension Corporation",
     template: "%s — Life Extension Corporation",
