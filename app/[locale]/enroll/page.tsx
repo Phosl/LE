@@ -9,7 +9,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   if (!isLocale(locale)) return {};
   const copy = getCopy(locale);
-  return createLocalizedMetadata(locale, copy.nav.enroll, copy.enroll.intro, "/enroll");
+  return {
+    ...createLocalizedMetadata(locale, copy.nav.enroll, copy.enroll.intro, "/enroll"),
+    robots: { index: false, follow: true },
+  };
 }
 
 export default async function EnrollmentPage({ params }: { params: Promise<{ locale: string }> }) {

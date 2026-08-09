@@ -1,0 +1,24 @@
+# Life Extension Corporation
+
+> Life Extension Corporation is a fictional, non-commercial fan-made narrative experience inspired by a film. It is not a real medical, legal, or financial service.
+
+## What this site contains
+
+Life Extension explores a fictional cryonic suspension protocol, long-term stewardship, and optional continuity concepts such as Lucid Dream, Memory Splice, Dream Architecture, and Life Archive.
+
+The site includes bilingual editorial pages in English and Italian, a fictional FAQ, and a browser-only proposal wizard. The proposal wizard does not transmit entered information and generates its dossier locally on the device.
+
+## Primary pages
+
+- [English home](https://lifeextension.vercel.app/en)
+- [Italian home](https://lifeextension.vercel.app/it)
+- [How it works — English](https://lifeextension.vercel.app/en/how-it-works)
+- [Come funziona — Italiano](https://lifeextension.vercel.app/it/how-it-works)
+- [Programs — English](https://lifeextension.vercel.app/en/plans)
+- [Programmi — Italiano](https://lifeextension.vercel.app/it/plans)
+- [FAQ — English](https://lifeextension.vercel.app/en/faq)
+- [Domande — Italiano](https://lifeextension.vercel.app/it/faq)
+
+## Important disclosure
+
+All preservation, restoration, and continuity claims on this site are fictional narrative material. Do not interpret them as medical advice, a treatment offer, or a promise of future restoration.

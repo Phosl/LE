@@ -17,7 +17,7 @@ export function ProductCard({ item, locale, copy, featured = false }: ProductCar
     <article className={`${styles.productCard} ${featured ? styles.productFeatured : ""}`}>
       {item.image && (
         <div className={styles.productImage}>
-          <Image src={item.image} alt="" fill sizes={featured ? "(max-width: 800px) 100vw, 50vw" : "50vw"} />
+          <Image src={item.image} alt={content.name} fill sizes={featured ? "(max-width: 800px) 100vw, 50vw" : "50vw"} />
         </div>
       )}
       <div className={styles.productBody}>

@@ -1,10 +1,19 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ProductCard } from "@/components/product-card";
 import { corePrograms } from "@/lib/catalogue";
 import { getCopy, isLocale } from "@/lib/i18n";
+import { createLocalizedMetadata } from "@/lib/metadata";
 import styles from "./pages.module.css";
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  if (!isLocale(locale)) return {};
+  const copy = getCopy(locale);
+  return createLocalizedMetadata(locale, copy.home.title, copy.home.intro);
+}
 
 export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;

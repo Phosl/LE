@@ -5,19 +5,38 @@ import "@fontsource/inter/600.css";
 import "@fontsource/libre-baskerville/400.css";
 import "@fontsource/libre-baskerville/700.css";
 import "./globals.css";
+import { siteName, siteUrl, socialImage } from "@/lib/metadata";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://lifeextension.vercel.app"),
+  metadataBase: new URL(siteUrl),
+  applicationName: siteName,
   title: {
-    default: "Life Extension Corporation",
+    default: siteName,
     template: "%s — Life Extension Corporation",
   },
   description: "Preserve the body. Continue the mind. Life, part two.",
-  robots: { index: false, follow: false },
+  keywords: ["cryonic suspension", "life extension", "continuity design", "Lucid Dream"],
+  authors: [{ name: siteName }],
+  creator: siteName,
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: {
+    type: "website",
+    url: `${siteUrl}/en`,
+    siteName,
     title: "Life Extension Corporation",
     description: "A future of your choosing.",
-    images: ["/images/le-hero.png"],
+    locale: "en_US",
+    alternateLocale: ["it_IT"],
+    images: [{ url: socialImage, alt: "Life Extension Corporation" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteName,
+    description: "A future of your choosing.",
+    images: [socialImage],
   },
 };
 
